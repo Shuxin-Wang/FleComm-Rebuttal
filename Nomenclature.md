@@ -22,7 +22,7 @@
 | $A_{tot}(\boldsymbol{\tau}, \mathbf{a})$ | Joint advantage functions                                    |                                                              |
 | $f_{mix}$                                | Mixing function                                              | e.g., QMIX or QPLEX                                          |
 | $h_i^t, \mathbf{h}^t$                    | Hidden state                                                 | $\mathbf{h}^t=[h_1^t,\dots,h_n^t]$                           |
-| $\mathcal{O}_{-i}^t$                     | Observations set of all agents except $i$ at time $t$        | $\mathcal{O}_{-i}^t = \left{ o_j^t\right}_{j\neq i}$         |
+| $\mathcal{O}_{-i}^t$                     | Observations set of all agents except $i$ at time $t$        | $\mathcal{O}_{-i}^t =\{ o_j^t\}_{j\neq i}$                   |
 | $\mathcal{O}_{\mathcal{K}}^t$            | Observations partial subset of agents selected for communication | $\mathcal{O}_{\mathcal{K}}^t=\lbrace o_j^t\rbrace_{j\in \mathcal{K}}$ |
 | $x_i^t, \mathbf{x}^t$                    | Intermediate representation after communication              | $\mathbf{x}^t=[x_1^t,\dots,x_n^t]$                           |
 | $y_{tot}^t$                              | TD target for total Q-value                                  |                                                              |
