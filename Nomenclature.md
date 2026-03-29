@@ -6,7 +6,7 @@
 | $s, S$                                   | Global state and state space                                 | $s \in S$                                                    |
 | $a_i, A$                                 | Action and action space of a single agent $i$                | $a_i \in A$                                                  |
 | $\mathbf{a},\mathbf{A}$                  | Joint action vector and joint action space of all agents     | $\mathbf{a}=[a_1, \dots, a_n] \in \mathbf{A}\equiv A^n$      |
-| $P(s' \vert s, \mathbf{a})$              | State transition probability function                        | $P(s' |s, \mathbf{a}): S \times \mathbf{A} \times S \rightarrow [0, 1]$ |
+| $P(s' \vert s, \mathbf{a})$              | State transition probability function                        | $P(s'\vert s, \mathbf{a}): S \times \mathbf{A} \times S \rightarrow [0, 1]$ |
 | $r(s,\mathbf{a})$                        | Shared reward function                                       | $r(s, \mathbf{a}): S \times \mathbf{A} \rightarrow \mathbb{R}$ |
 | $\gamma$                                 | Discount factor                                              | $\gamma \in [0, 1)$                                          |
 | $o_i, O$                                 | Local observation and observation space of a single agent    | $o_i \in O$                                                  |
@@ -22,8 +22,8 @@
 | $A_{tot}(\boldsymbol{\tau}, \mathbf{a})$ | Joint advantage functions                                    |                                                              |
 | $f_{mix}$                                | Mixing function                                              | e.g., QMIX or QPLEX                                          |
 | $h_i^t, \mathbf{h}^t$                    | Hidden state                                                 | $\mathbf{h}^t=[h_1^t,\dots,h_n^t]$                           |
-| $\mathcal{O}_{-i}^t$                     | Observations set of all agents except $i$ at time $t$        | $\mathcal{O}_{-i}^t = \{o_j^t\}_{j\neq i}$                   |
-| $\mathcal{O}_{\mathcal{K}}^t$            | Observations partial subset of agents selected for communication | $\mathcal{O}_{\mathcal{K}}^t=\{o_j^t\}_{j\in \mathcal{K}}$   |
+| $\mathcal{O}_{-i}^t$                     | Observations set of all agents except $i$ at time $t$        | $\mathcal{O}_{-i}^t = \left \{o_j^t\right \}_{j\neq i}$      |
+| $\mathcal{O}_{\mathcal{K}}^t$            | Observations partial subset of agents selected for communication | $\mathcal{O}_{\mathcal{K}}^t=\left\{o_j^t\right\}_{j\in \mathcal{K}}$ |
 | $x_i^t, \mathbf{x}^t$                    | Intermediate representation after communication              | $\mathbf{x}^t=[x_1^t,\dots,x_n^t]$                           |
 | $y_{tot}^t$                              | TD target for total Q-value                                  |                                                              |
 | $\theta, \theta^-$                       | Online and target network parameters                         |                                                              |
