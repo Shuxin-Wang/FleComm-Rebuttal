@@ -14,7 +14,7 @@
 | $\tau_i, \mathcal{T}$                    | Action-observation history and history space of a single agent | $\tau_i \in \mathcal{T} \equiv (O \times A)^*$               |
 | $\boldsymbol{\tau},\mathbf{T}$           | Joint action-observation history and joint history space of all agents | $\boldsymbol{\tau}=[\tau_1, \dots, \tau_n] \in \mathbf{T} \equiv \mathcal{T} ^n$ |
 | $\pi_i(a_i \vert \tau_i)$                | Policy of agent $i$                                          | $\pi_i(a_i \vert \tau_i):\mathcal{T}\times A \rightarrow[0, 1]$ |
-| $G_t$                                    | Discounted cumulative return                                 | $G_t = \sum_{k=0}^{\infty} \gamma^k r_{t+k}$                 |
+| $G^t$                                    | Discounted cumulative return                                 | $G^t = \sum_{k=0}^{\infty} \gamma^k r^{t+k}$                 |
 | $Q_{tot}(\boldsymbol{\tau}, \mathbf{a})$ | Total joint action-value function                            | Estimated by the mixing network                              |
 | $Q_i(\tau_i, a_i; \theta_i)$             | Individual action-value function                             | Estimated by agent $i$ with parameters $\theta_i$            |
 | $V_i(\tau_i)$                            | Individual value function                                    |                                                              |
