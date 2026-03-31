@@ -31,6 +31,8 @@
 | $d_o$                                    | Dimension of the observation space                           |                                                              |
 | $\alpha_{ij}^t$                          | Attention weight of agent $i$ to agent $j$ at time $t$       |                                                              |
 | $o_i^t$                                  | Observation of agent $i$ at time $t$                         |                                                              |
+| $r_i^t$                                  | Reward of agent $i$ at time $t$                              |                                                              |
+| $a_i^t$                                  | Action of agent $i$ at time $t$                              |                                                              |
 | $\mathbf{m^t}$                           | Communication message                                        | $\mathbf{m^t}=[o_1^t,\dots,o_n^t]$                           |
 | $c_i^t, \mathbf{c}^t$                    | Aggregated communication message                             | $\mathbf{c}^t=[c_1^t,\dots,c_n^t]$                           |
 | $W_q, W_k, W_v,W_l$                      | Learnable projection matrices                                |                                                              |
