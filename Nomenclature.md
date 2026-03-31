@@ -1,6 +1,6 @@
 | **Symbol**                               | Description                                                  | Definition / Comments                                        |
 | ---------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| $G$                                      | Dec-POMDP tuple                                              | $G=\langle N, S, A, P, r, \Omega, O, \gamma \rangle$         |
+| $G$                                      | Dec-POMDP tuple                                              | $G=\langle \mathcal{N}, S, \mathbf{A}, P, r, \Omega, O, \gamma \rangle$ |
 | $\mathcal{N}$                            | Set of agents                                                | $\mathcal{N} = \{1, \dots, n\}$                              |
 | $n$                                      | Total number of agents                                       |                                                              |
 | $s, S$                                   | Global state and state space                                 | $s \in S$                                                    |
@@ -25,6 +25,7 @@
 | $\mathcal{O}_{-i}^t$                     | Observations set of all agents except $i$ at time $t$        | $\mathcal{O}_{-i}^t =\{ o_j^t\}_{j\neq i}$                   |
 | $\mathcal{O}_{\mathcal{K}}^t$            | Observations partial subset of agents selected for communication | $\mathcal{O}_{\mathcal{K}}^t=\lbrace o_j^t\rbrace_{j\in \mathcal{K}}$ |
 | $x_i^t, \mathbf{x}^t$                    | Intermediate representation after communication              | $\mathbf{x}^t=[x_1^t,\dots,x_n^t]$                           |
+| $\mathcal{L}(\theta)$                    | Global loss function                                         | $\mathcal{L}(\theta) = \mathbb{E}\left[ \sum_{t=1}^{T}(y_{tot}^t - Q_{tot}(s^t, \mathbf{a}^t; \theta))^2\right]$ |
 | $y_{tot}^t$                              | TD target for total Q-value                                  |                                                              |
 | $\theta, \theta^-$                       | Online and target network parameters                         |                                                              |
 | $d_e$                                    | Dimension of the embedding space                             |                                                              |
@@ -50,5 +51,5 @@
 | $M,\hat{M}$                              | Global high-precision and quantized messages                 | $M=[m_1,\dots,m_n]$                                          |
 | $\hat{\alpha}_{ij}$                      | Attention weights using quantized messages                   |                                                              |
 | $\mathcal{E}$                            | Global reconstruction error                                  |                                                              |
-| $\mathcal{L}$                            | Communication overhead                                       |                                                              |
+| $\Psi$                                   | Communication overhead                                       |                                                              |
 | $\epsilon_j$                             | Local precision demand of agent $j$                          | Determines bit allocation for agent $j$                      |
